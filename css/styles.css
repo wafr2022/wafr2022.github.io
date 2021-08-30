@@ -11288,6 +11288,7 @@ html {
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
+  color: var(--bs-secondary)
 }
 @media (min-width: 992px) {
   .page-section .page-section-heading {
