@@ -238,16 +238,16 @@ sup {
 
 a {
   color: inherit;
-  text-decoration: dotted;
+  text-decoration: underline dotted;
 }
 a:hover {
   color: inherit;
-  text-decoration: dotted;
+  text-decoration: underline dotted;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
-  text-decoration: dotted;
+  text-decoration: underline dotted;
 }
 
 pre,
