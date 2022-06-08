@@ -103,9 +103,9 @@
     </tr>
     <tr>
       <th scope="row">09:45</th>
-      <td>Keynote: Russ Tedrake</td>
-      <td>Keynote: Hadas Kress-Gazit</td>
-      <td>Keynote: Oliver Brock</td>
+      <td><a href="#keynote1">Keynote: Russ Tedrake</a></td>
+      <td><a href="#keynote2">Keynote: Hadas Kress-Gazit</a></td>
+      <td><a href="#keynote3">Keynote: Oliver Brock</a></td>
     </tr>
     <tr>
       <th scope="row">10:45</th>
@@ -117,7 +117,7 @@
       <th scope="row">11:15</th>
       <td><a href="#session2">Session 2</a></td>
       <td><a href="#session5">Session 5</a></td>
-      <td>Lab tours</td>
+      <td>Lab tours; <a href='#nsf'>NSF Q&A</a></td>
     </tr>
     <tr>
       <th scope="row">12:30</th>
@@ -175,7 +175,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="colgroup" colspan=2>Session 1 (Wednesday, June 22)
+      <th scope="colgroup" colspan=2>Session 1 (Wednesday June 22)
     </tr>
   </thead>
   <tbody>
@@ -207,11 +207,74 @@
   </tbody>
 </table>
 
+<a id="keynote1"></a>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="colgroup" colspan=2>Keynote 1 (Wednesday June 22, 9:45am)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          <p><b>Motion planning around obstacles with convex optimization</b></p>
+          <p>Russ Tedrake</p>
+          <p><b>Abstract:</b>
+          In this talk, I'll describe a new approach to planning that strongly
+          leverages both continuous and discrete/combinatorial optimization.
+          The framework is fairly general, but I will focus on a particular
+          application of the framework to planning continuous curves around
+          obstacles. Traditionally, these sort of motion planning problems have
+          either been solved by trajectory optimization approaches, which
+          suffer with local minima in the presence of obstacles, or by
+          sampling-based motion planning algorithms, which can struggle with
+          derivative constraints and in very high dimensions. In the proposed
+          framework, called Graph of Convex Sets (GCS), we can recast the
+          trajectory optimization problem over a parametric class of continuous
+          curves into a problem combining convex optimization formulations for
+          graph search and for motion planning. The result is a non-convex
+          optimization problem whose convex relaxation is very tight &mdash; to the
+          point that we can very often solve very complex motion planning
+          problems to global optimality using the convex relaxation plus a
+          cheap rounding strategy. I will describe numerical experiments of GCS
+          applied to a quadrotor flying through buildings and robotic arms
+          moving through confined spaces. On a seven-degree-of-freedom
+          manipulator, GCS can outperform widely-used sampling-based planners
+          by finding higher-quality trajectories in less time, and in 14
+          dimensions (or more) it can solve problems to global optimality which
+          are hard to approach with sampling-based techniques.
+          </p>
+          <p><b>Bio:</b> 
+          Russ Tedrake is the Toyota Professor at the Massachusetts Institute
+          of Technology (MIT) in the Department of Electrical Engineering and
+          Computer Science, Mechanical Engineering, and Aero/Astro, and he is a
+          member of MIT’s Computer Science and Artificial Intelligence Lab
+          (CSAIL). He is also the Vice President of Robotics Research at Toyota
+          Research Institute (TRI). He received a B.S.E. in Computer
+          Engineering from the University of Michigan in 1999, and a Ph.D. in
+          Electrical Engineering and Computer Science from MIT in 2004. Dr.
+          Tedrake is the Director of the MIT CSAIL Center for Robotics and was
+          the leader of MIT's entry in the DARPA Robotics Challenge. He is a
+          recipient of the NSF CAREER Award, the MIT Jerome Saltzer Award for
+          undergraduate teaching, the DARPA Young Faculty Award in Mathematics,
+          the 2012 Ruth and Joel Spira Teaching Award, and was named a
+          Microsoft Research New Faculty Fellow. His research has been
+          recognized with numerous conference best paper awards, including
+          ICRA, Robotics: Science and Systems, Humanoids, Hybrid Systems:
+          Computation and Control, as well as the inaugural best paper award
+          from the IEEE RAS Technical Committee on Whole-Body Control.
+          </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 <a id="session2"></a>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="colgroup" colspan=2>Session 2 (Wednesday, June 22)
+      <th scope="colgroup" colspan=2>Session 2 (Wednesday June 22)
     </tr>
   </thead>
   <tbody>
@@ -247,7 +310,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="colgroup" colspan=2>Session 3 (Wednesday, June 22)
+      <th scope="colgroup" colspan=2>Session 3 (Wednesday June 22)
     </tr>
   </thead>
   <tbody>
@@ -279,7 +342,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="colgroup" colspan=2>Session 4 (Thursday, June 23)
+      <th scope="colgroup" colspan=2>Session 4 (Thursday June 23)
     </tr>
   </thead>
   <tbody>
@@ -311,11 +374,54 @@
   </tbody>
 </table>
 
+<a id="keynote2"></a>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="colgroup" colspan=2>Keynote 2 (Thursday June 23, 9:45am)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          <p><b>The Missing Skill</b></p>
+          <p>Hadas Kress-Gazit</p>
+          <p><b>Abstract:</b> To enable robots to perform complex tasks
+          &mdash; interact with people, react to events, change their task
+          &mdash; we must focus on specifications (what the robot should do),
+          skills (what it can do), and composition (how the robot will do
+          what it should do, given what it can do). There is extensive work
+          on all three of these themes; in this talk I will focus on finding
+          the “missing skill(s)” &mdash;  given a task, if the robot’s set of
+          skills is not enough to achieve it, how can we automatically
+          identify and create additional skills that will enable the robot to
+          achieve the task.</p>
+          <p><b>Bio:</b> Hadas Kress-Gazit is the Geoffrey S.M. Hedrick Sr.
+          Professor at the Sibley School of Mechanical and Aerospace
+          Engineering at Cornell University. She received her Ph.D. in
+          Electrical and Systems Engineering from the University of
+          Pennsylvania in 2008 and has been at Cornell since 2009. Her
+          research focuses on formal methods for robotics and automation and
+          more specifically on synthesis for robotics &mdash; automatically
+          creating verifiable robot controllers for complex high-level tasks.
+          Her group explores different types of robotic systems including
+          modular robots, soft robots and swarms and synthesizes (pun
+          intended) ideas from different communities such as robotics, formal
+          methods, control, hybrid systems and computational linguistics. She
+          is an IEEE Fellow and has received multiple awards for her
+          research, teaching and advocacy for groups traditionally
+          underrepresented in STEM. She lives in Ithaca with her partner and
+          two kids.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <a id="session5"></a>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="colgroup" colspan=2>Session 5 (Thursday, June 23)
+      <th scope="colgroup" colspan=2>Session 5 (Thursday June 23)
     </tr>
   </thead>
   <tbody>
@@ -347,11 +453,54 @@
   </tbody>
 </table>
 
+<a id="nsf"></a>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="colgroup" colspan=2>Q&A on NSF Robotics Programs
+      (Friday June 24, 11:15am)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p>This session will include presentations on NSF funding
+        opportunities of interest to the robotics community. The
+        cross-Directorate robotics core program Foundational Research in
+        Robotics (FRR) was founded in 2020 to eliminate artificial
+        distinctions between the engineering and computer science elements of
+        robotics, and to support a broad base of community-driven innovation
+        in robotics. NSF program officers will present the goals of the FRR
+        program and provide an overview of other robotics-relevant NSF
+        programs.</p>
+
+        <p>It was recently announced that the National Robotics Initiative
+        (NRI) &mdash; which has been NSF's  flagship robotics program for
+        over a decade &mdash; will be sunset. NSF program officers will also
+        discuss the implications of the NRI sunset on support for robotics at
+        NSF and offer guidance for prospective researchers. NSF remains
+        committed to supporting and growing a thriving robotics research
+        community. The FRR program will now provide a single home for
+        foundational research in robotics across NSF. FRR welcomes proposals
+        on a broad spectrum of foundational research in robotics, including
+        the topics of collaborative robotics and integration in robotics that
+        were previously supported by NRI.</p>
+
+        <p>Following the presentations, NSF program officers will take
+        questions from the audience. More information about the robotics
+        programs at NSF can be found at the <a
+        href='https://www.nsf.gov/robotics'>Robotics@NSF</a> website.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 <a id="session6"></a>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="colgroup" colspan=2>Session 6 (Thursday, June 23)
+      <th scope="colgroup" colspan=2>Session 6 (Thursday June 23)
     </tr>
   </thead>
   <tbody>
@@ -383,7 +532,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="colgroup" colspan=2>Session 7 (Friday, June 24)
+      <th scope="colgroup" colspan=2>Session 7 (Friday June 24)
     </tr>
   </thead>
   <tbody>
@@ -415,11 +564,67 @@
   </tbody>
 </table>
 
+<a id="keynote3"></a>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="colgroup" colspan=2>Keynote 3 (Friday June 24, 9:45am)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          <p><b>Water, Earth, Fire, and Air: What Basic Elements Form the Foundation of Robotics?</b></p>
+          <p>Oliver Brock</p>
+          <p><b>Abstract:</b> What once was the foundation of physics, today
+          seems quaint. Over the centuries, most scientific disciplines have
+          experienced disruptive changes to their foundation. These changes
+          are, in fact, a characteristic of mature scientific disciplines.
+          Looking at robotics: What are the chances that what we consider the
+          foundation today, will remain forever? If the history of science is
+          an indication, the chances are close to zero. One might argue that
+          the foundation of robotics is changing already through the advent of
+          new methods and technologies, most recently, for example, through
+          deep learning or depth cameras. But these methods and technologies
+          are applied within a conceptualization of robotics that remains
+          unchanged. One might also argue that robotics is not starting from
+          scratch but is building on centuries of advances in other
+          disciplines. But the foundations of these disciplines are tailored to
+          the problems addressed in these disciplines. We have imported them
+          and structured robotics accordingly. If robotics should evolve as a
+          scientific discipline, it might be worth examining the implicit
+          assumptions we have imported along with the foundations of other
+          disciplines &mdash; and the resulting consequences. In this talk, I will
+          attempt to evaluate the current foundation of robotics and speculate
+          about possible changes and what future advances they might enable.
+          <p><b>Bio:</b> Oliver Brock is the Alexander-von-Humboldt Professor
+          of Robotics in the School of Electrical Engineering and Computer
+          Science at the Technische Universität Berlin, a German "University of
+          Excellence". He received his Ph.D. from Stanford University in 2000
+          and held postdoctoral positions at Rice University and Stanford
+          University. He was an Assistant and Associate Professor in the
+          Department of Computer Science at the University of Massachusetts
+          Amherst before moving back to Berlin in 2009. The research of Brock's
+          lab, the Robotics and Biology Laboratory, focuses on robot
+          intelligence, mobile manipulation, interactive perception, grasping,
+          manipulation, soft material robotics, interactive machine learning,
+          deep learning, motion generation, and the application of algorithms
+          and concepts from robotics to computational problems in structural
+          molecular biology. Oliver Brock directs the Research Center of
+          Excellence "Science of Intelligence". He is an IEEE Fellow and was
+          president of the Robotics: Science and Systems Foundation from 2012
+          until 2019.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 <a id="session8"></a>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="colgroup" colspan=2>Session 8 (Friday, June 24)
+      <th scope="colgroup" colspan=2>Session 8 (Friday June 24)
     </tr>
   </thead>
   <tbody>
@@ -451,7 +656,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="colgroup" colspan=2>Session 9 (Friday, June 24)
+      <th scope="colgroup" colspan=2>Session 9 (Friday June 24)
     </tr>
   </thead>
   <tbody>
